@@ -17,17 +17,18 @@ Because of support for `kadira:flow-router` I've decided to rename
 ## Install
 
 ```sh
-meteor add zimme:active-route
+meteor add matadur:active-route-legacy
 ```
 
 ## Supported routers
 
+* [`staringatlights:flow-router`]
 * [`iron:router`]
-* [`kadira:flow-router`]
+* [`kadira:flow-router`] (Deprecated)
 * [`meteorhacks:flow-router`] (Deprecated)
 
 If multiple routers are installed, the package will match against `iron:router`
-routes first, then `kadira:flow-router` and lastly `meteorhacks:flow-router`.
+routes first, then `staringatlights:flow-router` then `kadira:flow-router` and lastly `meteorhacks:flow-router`.
 
 ## Template helpers
 

@@ -1,8 +1,8 @@
 Package.describe({
-  git: 'https://github.com/zimme/meteor-active-route.git',
-  name: 'zimme:active-route',
+  git: 'https://github.com/matadur/active-route-legacy.git',
+  name: 'matadur:active-route-legacy',
   summary: 'Active route helpers',
-  version: '2.3.3-rc.2'
+  version: '2.3.4'
 });
 
 Package.onUse(function(api) {
@@ -16,6 +16,7 @@ Package.onUse(function(api) {
   ]);
 
   api.use([
+    'staringatlights:flow-router@2.12.2',
     'kadira:flow-router@2.0.0',
     'meteorhacks:flow-router@1.8.0',
     'iron:router@1.0.0',
@@ -43,7 +44,7 @@ Package.onTest(function(api) {
   api.use([
     'practicalmeteor:mocha@2.1.0_5',
     'practicalmeteor:chai@2.1.0_1',
-    'zimme:active-route'
+    'matadur:active-route-legacy'
   ]);
 
   api.addFiles([

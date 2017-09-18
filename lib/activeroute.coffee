@@ -13,14 +13,14 @@ checkParams = (arg) ->
     throw new Error errorMessages.invalidRouteParamsArgument
 
 checkRouterPackages = ->
-  fr = Package['kadira:flow-router'] ? Package['meteorhacks:flow-router'] ? Package['kadira:flow-router-ssr']
+  fr = Package['staringatlights:flow-router'] ? Package['kadira:flow-router'] ? Package['meteorhacks:flow-router'] ? Package['kadira:flow-router-ssr']
   ir = Package['iron:router']
   throw new Error errorMessages.noSupportedRouter unless ir or fr
 
 errorMessages =
   noSupportedRouter:
     'No supported router installed. Please install ' +
-    'iron:router or meteorhacks:flow-router.'
+    'staringatlights:flow-router or iron:router or meteorhacks:flow-router.'
 
   invalidRouteNameArgument: 'Invalid argument, must be String or RegExp.'
   invalidRouteParamsArgument: 'Invalid arguemnt, must be Object.'

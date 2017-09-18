@@ -1,3 +1,8 @@
+## [2.3.4] - 2017-09-18
+
+  * Forked from `meteor-activeroute:legacy`
+  * Add `staringatlights:flow-router` as router option
+
 ## [2.3.2] - 2015-08-19
 
   * Use `setDefault` on reactive-dict to not overwrite migrated settings.
