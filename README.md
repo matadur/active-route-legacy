@@ -9,11 +9,6 @@
 This package provide helpers for figuring out if some route or path is or isn't
 the currently active route.
 
-## Package rename
-
-Because of support for `kadira:flow-router` I've decided to rename
-`zimme:iron-router-active` to `zimme:active-route` with version `2.0.0`.
-
 ## Install
 
 ```sh
