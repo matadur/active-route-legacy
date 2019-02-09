@@ -1,3 +1,12 @@
+## [2.4.0] - 2019-02-09
+
+  * Converted coffeescript files to js using [http://js2.coffee/](http://js2.coffee/)
+  * Removed coffeescript dependency
+  * Added [ostrio:flow-router-extra](https://atmospherejs.com/ostrio/flow-router-extra) and removed all other router options
+  * Removed tests and test dependencies
+  * Added ecmascript dependency
+  * Renamed ReactiveDict reference to avoid a conflict error
+
 ## [2.3.4] - 2017-09-18
 
   * Forked from `meteor-activeroute:legacy`

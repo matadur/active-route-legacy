@@ -1,8 +1,6 @@
-[![Gitter Badge]][Gitter]
-[![Code Climate Badge]][Code Climate]
-[![Travis Badge]][Travis]
 [![License Badge]][License]
-[![Gratipay Badge]][Gratipay]
+
+## (deprecated) FORK WAS MAINTAINED FOR PERSONAL USE ONLY - and is no longer needed, as functionality was integrated by `ostrio:flow-router-extra` ##
 
 # Active route helpers
 
@@ -17,13 +15,13 @@ meteor add matadur:active-route-legacy
 
 ## Supported routers
 
-* [`staringatlights:flow-router`]
-* [`iron:router`]
+* [`ostrio:flow-router-extra`]
+* [`staringatlights:flow-router`] (Deprecated)
+* [`iron:router`] (Deprecated)
 * [`kadira:flow-router`] (Deprecated)
 * [`meteorhacks:flow-router`] (Deprecated)
 
-If multiple routers are installed, the package will match against `iron:router`
-routes first, then `staringatlights:flow-router` then `kadira:flow-router` and lastly `meteorhacks:flow-router`.
+Only the current version of `ostrio:flow-router-extra` is now supported.
 
 ## Template helpers
 
@@ -212,17 +210,6 @@ ActiveRoute.configure({
 * `className` is an alias for `class` in template helpers
 * This package supports javascript's `RegExp`, [here][Regexp]'s some good info
 
-[Code Climate]: https://codeclimate.com/github/zimme/meteor-active-route
-[Code Climate Badge]: https://img.shields.io/codeclimate/github/zimme/meteor-active-route.svg
-[Gitter]: https://gitter.im/zimme/meteor-active-route
-[Gitter Badge]: https://img.shields.io/badge/gitter-join_chat-brightgreen.svg
-[`iron:router`]: https://atmospherejs.com/iron/router
-[`kadira:flow-router`]: https://atmospherejs.com/kadira/flow-router
 [License]: https://github.com/zimme/meteor-active-route/blob/master/LICENSE.md
 [License Badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[`meteorhacks:flow-router`]: https://atmospherejs.com/meteorhacks/flow-router
 [Regexp]: https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions
-[Travis]: https://travis-ci.org/zimme/meteor-active-route
-[Travis Badge]: https://img.shields.io/travis/zimme/meteor-active-route.svg
-[Gratipay Badge]: https://img.shields.io/badge/gratipay-$-brightgreen.svg
-[Gratipay]: https://gratipay.com/meteor-active-route
