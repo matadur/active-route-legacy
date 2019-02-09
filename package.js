@@ -24,31 +24,8 @@ Package.onUse(function(api) {
 
   api.export('ActiveRoute');
 
-});
-
-Package.onTest(function(api) {
-  api.versionsFrom(['1.0', '1.2']);
-
-  api.use([
-    'check',
-    'coffeescript',
-    'reactive-dict',
-    'templating',
-    'underscore'
-  ]);
-
-  api.use([
-    'practicalmeteor:mocha@2.1.0_5',
-    'practicalmeteor:chai@2.1.0_1',
-    'matadur:active-route-legacy'
-  ]);
-
-  api.addFiles([
-    'tests/client/activeroute.coffee',
-    'tests/client/helpers.coffee'
-  ], 'client');
   api.addFiles('lib/activeroute.js');
 
-  api.addFiles('tests/server/activeroute.coffee', 'server');
   api.addFiles('client/helpers.js', 'client');
+  
 });
