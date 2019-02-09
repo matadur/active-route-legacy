@@ -10,7 +10,6 @@ Package.onUse(function(api) {
 
   api.use([
     'check',
-    'coffeescript',
     'reactive-dict',
     'underscore'
   ]);
@@ -25,9 +24,6 @@ Package.onUse(function(api) {
 
   api.export('ActiveRoute');
 
-  api.addFiles('lib/activeroute.coffee');
-
-  api.addFiles('client/helpers.coffee', 'client');
 });
 
 Package.onTest(function(api) {
@@ -51,6 +47,8 @@ Package.onTest(function(api) {
     'tests/client/activeroute.coffee',
     'tests/client/helpers.coffee'
   ], 'client');
+  api.addFiles('lib/activeroute.js');
 
   api.addFiles('tests/server/activeroute.coffee', 'server');
+  api.addFiles('client/helpers.js', 'client');
 });
